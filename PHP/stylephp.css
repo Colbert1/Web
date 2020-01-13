@@ -1,0 +1,11 @@
+div#couleurrouge{
+    background-color: blue;
+    
+}
+div#couleurbleue{
+    background-color: red;
+}
+body {
+    background-color: rgb(70, 172, 255); 
+    font-family: Verdana, sans-serif; 
+    font-size: 100%;

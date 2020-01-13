@@ -1,0 +1,90 @@
+body{
+    background-color: #e5bece
+}
+.page{
+    width: 780px;
+    margin: auto;
+    font-size: 16px;
+    font-family: cursive;
+}
+.infoetphoto{
+    height: 250px;
+}
+.info{
+    float: left;
+    line-height:11px;
+}
+.photo{
+    float: right;
+}
+.section{
+    margin-bottom: 75px;
+}
+.titre{
+    font-weight: bold;
+    font-size: 20px;
+}
+#ParcoursG {
+    float:left;
+    font-weight:bold;
+    font-size:20px;
+    line-height:65px;
+    position:absolute;
+    top:305px;
+}
+#ExperienceG {
+    float:left;
+    font-weight:bold;
+    font-size:20px;
+    line-height:140px;
+    position: absolute;
+    top:600px;
+}
+#LangueG {
+    float:left;
+    font-weight:bold;
+    font-size:20px;
+    line-height:75px;
+    position: absolute;
+    top:1100px;
+}
+#PasseTpsG {
+    float:left;
+    font-weight:bold;
+    font-size:20px;
+    line-height:50px;
+    position: absolute;
+    top:1550px;
+}
+#ParcoursD {
+    text-align:right;
+    font-weight:bold;
+    font-size:20px;
+    line-height:15px;
+    position: relative;
+    top:165px;
+}
+#ExperienceD {
+    text-align:right;
+    font-weight:bold;
+    font-size:20px;
+    line-height:20px;
+    position: relative;
+    top:275px;
+}
+#LangueD {
+    text-align:right;
+    font-weight:bold;
+    font-size:20px;
+    line-height:75px;
+    position: relative;
+    top:310px;
+}
+#PasseTpsD {
+    text-align:right;
+    font-weight:bold;
+    font-size:20px;
+    line-height:20px;
+    position: relative;
+    top:410px;
+}

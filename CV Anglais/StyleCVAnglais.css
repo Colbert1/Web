@@ -1,0 +1,41 @@
+body{
+    background-color: #8199a7
+}
+.page{
+    width: 780px;
+    margin: auto;
+    font-size: 16px;
+    font-family: cursive;
+}
+.infoetphoto{
+    height: 250px;
+}
+.info{
+    float: left;
+    line-height:11px;
+}
+.photo{
+    float: right;
+}
+.section{
+    margin-bottom: 75px;
+}
+.sec-gauche{
+    float: left;
+}
+.sec-droite{
+    margin-left: 170px;
+}
+.titre{
+    font-weight: bold;
+    font-size: 20px;
+}
+
+#Training {
+    float:left;
+    font-weight:bold;
+    font-size:20px;
+    line-height:65px;
+    position:absolute;
+    top:305px;
+}

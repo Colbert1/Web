@@ -1,0 +1,29 @@
+html, body {
+margin: 0;
+background-color: #6b4b4b;
+color: #FFFFFF;
+font-family: verdana, arial, sans-serif;
+font-size: 12px;
+height: 100%;
+width: 100%;
+}
+
+#minia {
+text-align: center;
+margin-left: auto;
+margin-right: auto;
+}
+
+img.ls {
+height: 100px;
+width: 134px;
+margin: 20px;
+padding: 17px 0;
+}
+
+img.pt {
+height: 134px;
+width: 100px;
+margin: 20px;
+padding: 0 17px;
+}
