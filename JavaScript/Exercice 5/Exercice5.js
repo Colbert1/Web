@@ -6,12 +6,14 @@ function boucle() {
     }
 }
 function boucle2() {
-    var tailleTab = prompt("Quelle taille de tableau désires-tu ? ");
+    var tailleDuTab = prompt("Quelle taille de tableau désires-tu ? ");
 
-    for (i = 0; i < tailleTab; i++) {
+    for (i = 0; i < tailleDuTab; i++) {
 
         resultat = i * i;
         alert(resultat);
     }
 }
+function affiche() {
 
+}
