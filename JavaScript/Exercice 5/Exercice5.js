@@ -14,6 +14,3 @@ function boucle2() {
         alert(resultat);
     }
 }
-function affiche() {
-
-}
