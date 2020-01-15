@@ -1,5 +1,5 @@
 function jourDeLaSemaine() {
-    var madate = new Date();
+    var maDate = new Date();
     madate.getDate();
     switch (madate.getDay()) {
         case 1:
@@ -24,5 +24,5 @@ function jourDeLaSemaine() {
             console.log('Dimanche');
             break;
     }
-    alert (madate);
+    alert (maDate);
 }
