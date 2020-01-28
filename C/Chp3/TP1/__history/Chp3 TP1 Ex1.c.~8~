@@ -1,0 +1,26 @@
+#include <stdio.h>
+#include <conio.h>
+
+int puissance(int a, int b)
+{
+	int calcul;
+	calcul=pow(a,b);
+
+	return calcul;
+}
+
+int main(int argc, char* argv[])
+{
+	int x,y;
+	printf("Quelle est la valeur de x ? \n");
+	scanf("%d",&x);
+	printf("Quelle est la valeur de x ? \n");
+	scanf("%d",&y);
+
+	calcul=puissance(x,y);
+
+	printf("La valeur est égale à %d",calcul);
+
+	getch();
+	return 0;
+}

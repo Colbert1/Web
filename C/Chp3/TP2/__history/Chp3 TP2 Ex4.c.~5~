@@ -1,0 +1,6 @@
+#include <stdio.h>
+#include <conio.h>
+void lire (char*tab)
+void affiche (char*tab)
+void indice_min (char*tab)
+void trier (char*tab)

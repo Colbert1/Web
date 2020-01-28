@@ -1,0 +1,27 @@
+#include <stdio.h>
+#include <conio.h>
+void majuscule(char *chaine)
+{
+    int i = 0;
+    for (i = 0; chaine[i] != '\0'; i ++)
+    {
+        if(chaine[i]>= 'A' && chaine[i] <= 'Z')
+		chaine[i] = chaine[i] - 'A' + 'a' ;
+    }
+
+    printf("chaine convertie : %s \n",chaine);
+}
+
+int main(int argc, char *argv[])
+{
+
+    char str[100];
+	printf("Entrez la chaine a convertir : ");
+	gets(str);
+
+    majuscule(str);
+
+    system("PAUSE");
+    return EXIT_SUCCESS;
+}
+

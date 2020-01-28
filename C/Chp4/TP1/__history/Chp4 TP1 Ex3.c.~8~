@@ -1,0 +1,20 @@
+#include <stdio.h>
+#include <tchar.h>
+#include <iostream>
+
+int main(int argc, char*argv[])
+{
+
+int i;
+char* chainecarac;
+chainecarac = (char*) malloc(50 * sizeof(char));
+scanf("%s",chainecarac);
+for(i = 0; i < strlen(chainecarac); i++)
+{
+printf("%p : %c \n", &chainecarac[i], chainecarac[i]);
+}
+free(chainecarac);
+
+getch();
+return 0;
+}

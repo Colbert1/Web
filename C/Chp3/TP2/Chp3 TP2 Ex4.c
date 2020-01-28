@@ -1,0 +1,10 @@
+#include <stdio.h>
+#include <conio.h>
+void lire (int*tab)
+void affiche (int*tab)
+void indice_min (int*tab)
+void trier (int*tab)
+
+void main()
+
+

@@ -1,0 +1,23 @@
+#include <stdio.h>
+#include <tchar.h>
+
+typedef struct
+{
+	char nom[5];
+	char prenom[5];
+	int age;
+	float note;
+}
+fiche;
+
+int main(int argc, char* argv[])
+{
+	fiche.f1;
+	f1.note=12.5;
+	strcpy(f1.note,"Colbert");
+	strcpy(f1.prenom,"Gregoire");
+	f1.age=18;
+	printf
+	getch();
+	return 0;
+}

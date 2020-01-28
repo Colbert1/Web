@@ -1,0 +1,47 @@
+#pragma hdrstop
+#pragma argsused
+
+#include <stdio.h>
+#include <conio.h>
+#include <stdlib.h>
+#include <math.h>
+
+#ifdef _WIN32
+#include <tchar.h>
+#else
+  typedef char _TCHAR;
+  #define _tmain main
+#endif
+#define true 1
+#define false 0
+
+int _tmain(int argc, _TCHAR* argv[])
+{
+	FILE *fichier1, *fichier2;
+	int verif=0;
+	char caractere;
+
+	fichier1 = fopen("./source.txt","r");
+	fichier2 = fopen("./dest1.txt","w");
+
+	if (fichier1==NULL) {
+		printf("bug fichier1\n");
+	}
+	if (fichier2==NULL) {
+		printf("bug fichier2\n");
+	}
+
+	while(verif == 0 && fichier1 != NULL && fichier2 != NULL)
+	{
+		caractere = getc(fichier1);
+		putc(caractere,fichier2);
+		verif=feof(fichier1);
+	}
+
+fclose(fichier1);
+fclose(fichier2);
+
+getch();
+return 0;
+}
+

@@ -1,0 +1,13 @@
+#include <stdio.h>
+#include <tchar.h>
+
+void mot_de_passe (char*MDP){
+	char chaine;
+	for (i = 0; i < 8; i++) {
+	chaine=getch();
+	MDP [i] = chaine;
+	chaine = *;
+	printf("%c",chaine);
+	}
+		
+}

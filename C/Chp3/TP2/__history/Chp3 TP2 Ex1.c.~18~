@@ -1,0 +1,25 @@
+#include <stdio.h>
+#include <tchar.h>
+#include <math.h>
+
+void multiple2(int x) {
+	if (x%2==0) {
+		printf("C'est un multiple de 2.");
+	}
+}
+void multiple3(int y) {
+	if (y%3==0) {
+        printf("C'est un multiple de 3.");
+    }
+}
+int main(int argc, char* argv[])
+{
+	int x,y;
+	printf("Entrez un nombre entier: %d");
+	scanf("%d",&x,&y);
+	getch();
+	multiple2(x);
+	multiple3(y);
+	system("PAUSE");
+	return 0;
+}

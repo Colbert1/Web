@@ -1,0 +1,29 @@
+#include <stdio.h>
+#include <conio.h>
+void maj(char *chaine)
+{
+	int i = 0,compteur=0;
+    for (i = 0; chaine[i] != '\0'; i ++)
+    {
+		if(chaine[i]>= 'A' && chaine[i] <= 'Z'){
+		chaine[i] = chaine[i] - 'A' + 'a' ;
+		compteur++;}
+	}
+
+	printf("Chaine convertie: %s \n",chaine);
+	printf("Le nombre de caractere modifie est de : %d",compteur);
+}
+
+int main(int argc, char *argv[])
+{
+
+	char str[50];
+	printf("Ecrivez quelque chose: ");
+	gets(str);
+
+	maj(str);
+
+	getch();
+	return 0;
+}
+

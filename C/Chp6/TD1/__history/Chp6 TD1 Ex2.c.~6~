@@ -1,0 +1,17 @@
+#include <stdio.h>
+#include <tchar.h>
+
+typedef struct
+{
+	float x,y;
+}
+point;
+void main()
+{
+	point pt[15];
+	char lettre='A';
+	for (i = 0; i < 15; i++) {
+		printf("X=");
+		scanf ("%f",&pt[i].X);
+	}
+}

@@ -1,0 +1,19 @@
+#include <stdio.h>
+#include <tchar.h>
+
+char mot_de_passe (char MDP[])
+{
+	int i=0;
+	char verifch ='\0';
+	while (verifch !=13)
+	{
+		verifch = getch();
+		if (verifch !=13) {
+		MDP[i] = verifch;
+		printf("*");
+		i++;
+		}
+	}
+	MDP[i]='\0';
+}
+

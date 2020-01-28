@@ -1,0 +1,35 @@
+#include <stdlib.h>
+#include <stdio.h>
+#include <conio.h>
+
+
+int _tmain(int argc, _TCHAR* argv[])
+{
+	FILE *fichier1,*fichier2;
+	char caractere;
+	int test=0;
+
+	fichier1 = fopen("./source.txt","r");
+	fichier2 = fopen("./dest1.txt","w");
+
+	if (source==NULL) {
+		printf("Le fichier ne peut pas s'ouvrir..\n");
+	}
+	if (dest==NULL){
+		printf("Le fichier ne peut pas s'ouvrir..\n");
+	}
+
+	while (test == 0 && source != NULL && dest !=NULL) {
+		cara = getc(source);
+		putc(cara,dest);
+
+		test = feof(source);
+	}
+
+	fclose(source);
+	fclose(dest);
+
+	getch();
+	return 0;
+}
+

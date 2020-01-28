@@ -1,0 +1,32 @@
+#include <stdio.h>
+#include <tchar.h>
+
+typedef struct
+{
+	char nom[5];
+	char prenom[5];
+	int age;
+	float note;
+}
+fiche;
+void affichetab(fiche *tab, int nb)
+{
+	int i;
+	for (i = 0; i < nb; i++) {
+		printf("Fiche %d: \n",i+1);
+		printf("\t Nom: %s \n",tab[i].nom);
+		printf("\t Prenom: %s \n",tab[i].prenom);
+		printf("\t Age: %s \n",tab[i].age);
+		printf("\t Note: %f \n",tab[i].note);
+	}
+}
+int main(int argc, char* argv[])
+{
+	fiche.f1;
+	f1.note=12.5;
+	strcpy(f1.note,"Colbert");
+	strcpy(f1.prenom,"Gregoire");
+	f1.age=18;
+	getch();
+	return 0;
+}

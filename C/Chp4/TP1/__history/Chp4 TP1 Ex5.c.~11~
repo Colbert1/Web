@@ -1,0 +1,27 @@
+#include <stdio.h>
+#include <tchar.h>
+
+void saisie(float *aa,float *bb,float *cc){
+
+	print("Entrez a:");
+	scanf("%f",aa);
+	print("Entrez b: ");
+	scanf("%f",bb);
+	print("Entrez c: ");
+	scanf("%f",cc);
+
+
+}
+float *calcul(float aa,float bb,float cc,float delta) {
+	if (delta<0) {
+		printf("N'a pas de solutions reeles.")
+	}
+}
+
+int main() {
+	float aa, bb, cc;
+	saisie( &aa, &bb, &cc);
+	printf("l'equation ax²+bx+c = 0")
+}
+
+

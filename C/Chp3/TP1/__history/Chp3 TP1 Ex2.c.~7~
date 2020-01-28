@@ -1,0 +1,17 @@
+#include <stdio.h>
+#include <tchar.h>
+#include <conio.h>
+#include <math.h>
+
+int tab[10]={1,2,4,8,16,32,64,128,258,512};
+void affiche(int*t)
+
+int main(int argc, char* argv[])
+{
+	int i;
+	int tab[10]={1,2,4,8,16,32,64,128,258,512};
+	for (i=0; i < 10; i++) {
+        printf("%d:%d \n",i,t[i]);
+	}
+	return 0;
+}

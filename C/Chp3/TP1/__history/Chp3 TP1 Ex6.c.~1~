@@ -1,0 +1,31 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <tchar.h>
+
+         void inverse(char *ch)
+         {
+    int i = 0, j = strlen(ch) - 1;
+    char tmp;
+ 
+    while(i < j)
+    {
+        tmp= ch[i];
+        ch[i] = ch[j];
+        ch[j] = tmp;
+        i++;
+        j--;
+    }
+        }
+
+ int main()
+ 
+ {
+     char ch[100];
+   printf(" Entrez une chaine de caractere :  ");
+   gets(ch);
+   inverse(ch);
+   printf(" Chaine de caractere apres inversion = %s\n\n",ch);
+   system ("PAUSE");
+   return 0;
+   
+ }

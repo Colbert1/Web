@@ -1,0 +1,24 @@
+#include <stdlib.h>
+#include <stdio.h>
+
+
+int main(int argc, char *argv[])
+{
+    FILE* fichier = NULL;
+
+	fichier = fopen("source.txt","r");
+
+    if (fichier != NULL)
+	{
+
+    }
+    else
+	{
+        printf("Impossible d'ouvrir le fichier source.txt");
+	}
+}
+fclose(fichier);
+
+getch();
+return 0;
+}

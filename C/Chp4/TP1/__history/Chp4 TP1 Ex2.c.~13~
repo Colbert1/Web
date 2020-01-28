@@ -1,0 +1,21 @@
+#include <stdio.h>
+#include <tchar.h>
+#include <stdlib.h>
+void allocTable (int**tab)
+{
+	*tab = malloc(6*sizeof(int));
+}
+void freeTable (int*tab)
+{
+	free(tab);
+}
+int main()
+{
+int *adr_deb,max, i;
+adr_deb = malloc(6*sizeof(int));
+
+
+getch();
+return 0;
+}
+

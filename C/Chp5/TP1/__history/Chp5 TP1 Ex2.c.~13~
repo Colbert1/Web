@@ -1,0 +1,27 @@
+#include <stdlib.h>
+#include <stdio.h>
+#include <conio.h>
+
+
+int main()
+{
+	FILE *fichier1, *fichier2;
+	int verif=0;
+	char caractere;
+
+	fichier1 = fopen("./source.txt","r");
+	fichier2 = fopen("./dest1.txt","w");
+
+	while(verif == 0 && fichier1 != NULL && fichier2 != NULL)
+	{
+		caractere = getc(fichier1);
+		putc(caractere,fichier2);
+		verif=feof(fichier1);
+	}
+
+fclose(fichier1);
+fclose(fichier2);
+
+getch();
+return 0;
+}

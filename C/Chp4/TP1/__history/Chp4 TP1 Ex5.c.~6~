@@ -1,0 +1,24 @@
+#include <stdio.h>
+#include <tchar.h>
+
+void saisie(float *aa,float *bb,float *cc){
+
+	print("Entrez a:");
+	scanf("%f",aa);
+	print("Entrez b: ");
+	scanf("%f",bb);
+	print("Entrez c: ");
+	scanf("%f",cc);
+
+
+}
+float *calcul(float aa,float bb,float cc) {
+
+}
+
+int main() {
+	float aa, bb, cc;
+	saisie( &aa, &bb, &cc);
+}
+
+
