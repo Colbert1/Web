@@ -58,7 +58,9 @@ int Random()
     int nbgen;
     int egen;
 
+
     nbgen = rand() % 22 + 0;
+
 
     egen = rand() % 3 + 1;
 
@@ -85,13 +87,13 @@ void TableauScore(ScoreDart *Partie)
     printf("\n");
     for (y = 0; y < 7; y++)
     {
-        score[1][y] = Random();
+		score[1][y] = Random();
         printf("%d  ", score[1][y]);
     }
     printf("\n");
     for (y = 0; y < 7; y++)
     {
-        score[2][y] = Random();
+		score[2][y] = Random();
         printf("%d  ", score[2][y]);
     }
     printf("\n");
@@ -113,22 +115,22 @@ int main()
     int menu, tape, Partie, nbj = 0;
     int quit = 0;
     Joue = malloc(25 * sizeof(ScoreDart));
-    srand(time(NULL));
+	srand(time(NULL));
     while (quit == 0)
-    {
-        printf("COLBERT Gregoire\n");
-        printf("VAST Apoline\n");
-        printf("\n\n\n\n");
-        printf("			     |------------|\n\n");
-        printf("			    |JEU FLECHETTE|\n\n");
-        printf("			     |------------|\n\n\n");
-        printf("                     	        1-Joueur \n");
-        printf("                     	        2-Jeu \n");
-        printf("                       	        3-Score \n\n");
+	{
+		printf("COLBERT Gregoire\n");
+		printf("VAST Apoline\n");
+		printf("\n\n\n\n");
+		printf("			     |------------|\n\n");
+		printf("			    |JEU FLECHETTE|\n\n");
+		printf("			     |------------|\n\n\n");
+		printf("                     	     1-Joueur \n");
+		printf("                     	     2-Jeu \n");
+		printf("                       	     3-Score \n\n");
         scanf("%d", &tape);
         if (tape == 1)
         {
-            SaisieJoueur(Joue, &nbj);
+			SaisieJoueur(Joue, &nbj);
         }
         else if (tape == 2)
         {
@@ -143,3 +145,4 @@ int main()
 
     return 0;
 }
+

@@ -7,6 +7,38 @@ typedef struct
     float Score[50];
 } ScoreDart;
 
+void menu (ScoreDart *Partie)
+{
+    ScoreDart *Joue = NULL;
+    int menu, tape, Partie, nbj = 0;
+    int quit = 0;
+	Joue = malloc(25 * sizeof(ScoreDart));
+    while (quit == 0)
+	{
+		printf("COLBERT Gregoire\n");
+		printf("VAST Apoline\n");
+		printf("\n\n\n\n");
+		printf("			     |------------|\n\n");
+		printf("			    |JEU FLECHETTE|\n\n");
+		printf("			     |------------|\n\n\n");
+		printf("                     	        1-Joueur \n");
+		printf("                     	        2-Jeu \n");
+		printf("                       	        3-Score \n\n");
+        scanf("%d", &tape);
+        if (tape == 1)
+        {
+			SaisieJoueur(Joue, &nbj);
+        }
+        else if (tape == 2)
+        {
+            //   Jeu
+        }
+        else if (tape == 3)
+        {
+            TableauScore(&Partie);
+        }
+        printf("\n");
+    }
 void SaisieJoueur(ScoreDart *Partie, int *nbJoueur)
 {
     int i;
@@ -58,10 +90,10 @@ int Random()
     int nbgen;
     int egen;
 
-    srand(time(NULL));
+
     nbgen = rand() % 22 + 0;
 
-    srand(time(NULL));
+
     egen = rand() % 3 + 1;
 
     if (nbgen == 21)
@@ -81,26 +113,25 @@ void TableauScore(ScoreDart *Partie)
 
     for (y = 0; y < 7; y++)
     {
-        score[0][y] = Random();
         printf("%d ", score[0][y]);
     }
 
     printf("\n");
     for (y = 0; y < 7; y++)
     {
-        score[0][y] = Random();
+		score[1][y] = Random();
         printf("%d  ", score[1][y]);
     }
     printf("\n");
     for (y = 0; y < 7; y++)
     {
-        score[0][y] = Random();
+		score[2][y] = Random();
         printf("%d  ", score[2][y]);
     }
     printf("\n");
     for (y = 0; y < 7; y++)
     {
-        score[0][y] = Random();
+        score[3][y] = Random();
         printf("%d  ", score[3][y]);
     }
 }
@@ -111,32 +142,7 @@ void Jeu(ScoreDart *Partie)
 
 int main()
 
-{
-    ScoreDart *Joue = NULL;
-    int menu, tape, Partie, nbj = 0;
-    int quit = 0;
-    Joue = malloc(25 * sizeof(ScoreDart));
-
-    while (quit == 0)
-    {
-        printf("1-Joueur \n");
-        printf("2-Jeu \n");
-        printf("3-Score \n");
-        scanf("%d", &tape);
-        if (tape == 1)
-        {
-            SaisieJoueur(Joue, &nbj);
-        }
-        else if (tape == 2)
-        {
-            //   Jeu
-        }
-        else if (tape == 3)
-        {
-            TableauScore(&Partie);
-        }
-        printf("\n");
-    }
+    srand(time(NULL));
 
     return 0;
 }

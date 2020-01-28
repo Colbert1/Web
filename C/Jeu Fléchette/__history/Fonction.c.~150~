@@ -58,7 +58,7 @@ int Random()
     int nbgen;
     int egen;
 
-    srand(time(NULL));
+
     nbgen = rand() % 22 + 0;
 
 
@@ -115,16 +115,22 @@ int main()
     int menu, tape, Partie, nbj = 0;
     int quit = 0;
     Joue = malloc(25 * sizeof(ScoreDart));
-
+	srand(time(NULL));
     while (quit == 0)
-    {
-        printf("1-Joueur \n");
-        printf("2-Jeu \n");
-        printf("3-Score \n");
+	{
+		printf("COLBERT Gregoire\n");
+		printf("VAST Apoline\n");
+		printf("\n\n\n\n");
+		printf("			     |------------|\n\n");
+		printf("			    |JEU FLECHETTE|\n\n");
+		printf("			     |------------|\n\n\n");
+		printf("                     	    1-Joueur \n");
+		printf("                     	    2-Jeu \n");
+		printf("                       	    3-Score \n\n");
         scanf("%d", &tape);
         if (tape == 1)
         {
-            SaisieJoueur(Joue, &nbj);
+			SaisieJoueur(Joue, &nbj);
         }
         else if (tape == 2)
         {
