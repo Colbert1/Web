@@ -1,17 +1,17 @@
 #include <stdio.h>
 #include <conio.h>
-void appels (double x, double y, int v1, v2)
-	{
-		printf («%f*%f = %f\n »,x,y,produit(x,y)) ;
-		printf(« %d/%d = %d\n », v1, v2, div(v1, v2)) ;
-	}
-	int main (int argc, char**argv)
-	{
-		double x, y ;
-		int val1, val2 ;
-		printf («Entrez deux réels et deux entiers : ») ;
-		scantf (« %f%f%d,&x,&y,&val1,&val2);
-		appels (x, y, val1, val2);
-		return 0 ;
-	}
-
+void appels(double x, double y, int v1, v2)
+{
+	printf(ï¿½ % f * % f = % f\n ï¿½, x, y, produit(x, y));
+	printf(ï¿½ % d / % d = % d\n ï¿½, v1, v2, div(v1, v2));
+}
+int main(int argc, char **argv)
+{
+	double x, y;
+	int val1, val2;
+	printf(ï¿½Entrez deux rï¿½els et deux entiers
+		   : ï¿½);
+	scantf(ï¿½ % f % f % d, &x, &y, &val1, &val2);
+	appels(x, y, val1, val2);
+	return 0;
+}

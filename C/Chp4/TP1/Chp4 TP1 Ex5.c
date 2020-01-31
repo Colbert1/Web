@@ -16,17 +16,17 @@ float *calcul(float aa, float bb, float cc, float delta)
 	else if (delta < 0)
 	{
 		printf("N'a pas de solutions reeles. %f");
-		scanf("%f",aa);
+		scanf("%f", aa);
 	}
 	else if (delta = 0)
 	{
 		printf("A une unique solution. %f");
-		scanf("%f",bb);
+		scanf("%f", bb);
 	}
 	else if (delta > 0)
 	{
 		printf("A deux solutions distinctes. %f");
-		scanf("%f",cc);
+		scanf("%f", cc);
 	}
 }
 

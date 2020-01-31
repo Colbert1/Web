@@ -6,27 +6,28 @@
 #include <stdlib.h>
 #include <math.h>
 
-int main(int argc, char* argv[])
+int main(int argc, char *argv[])
 {
 	FILE *fichier;
 	char caractere;
-	int verif=0;
+	int verif = 0;
 
-	fichier = fopen("./source.txt","r");
+	fichier = fopen("./source.txt", "r");
 
 	if (fichier == NULL)
 	{
 		printf("Impossible d'ouvrir le fichier source.txt");
 	}
 
-	while (verif == 0 && fichier != NULL) {
+	while (verif == 0 && fichier != NULL)
+	{
 		caractere = getc(fichier);
-		printf("%c",caractere);
+		printf("%c", caractere);
 		verif = feof(fichier);
 	}
 
-fclose(fichier);
+	fclose(fichier);
 
-getch();
-return 0;
+	getch();
+	return 0;
 }

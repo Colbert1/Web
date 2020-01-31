@@ -1,15 +1,16 @@
 #include <stdio.h>
 #include <conio.h>
-double produit (double x, double y)
-	{
-		return x*y ;
-	}
-	int main (int argc, char**argv)
-	{
-		double x,y ;
-		printf (« Entrez valeur : ») ;
-		scanf (« %f%f », &x, &y) ;
-		printf (« Resultat :%f\n », produit(x,y)) ;
-		return o ;
-	}
-
+double produit(double x, double y)
+{
+	return x * y;
+}
+int main(int argc, char **argv)
+{
+	double x, y;
+	printf(ï¿½ Entrez valeur
+		   : ï¿½);
+	scanf(ï¿½ % f % f ï¿½, &x, &y);
+	printf(ï¿½ Resultat
+		   : % f\n ï¿½, produit(x, y));
+	return o;
+}
